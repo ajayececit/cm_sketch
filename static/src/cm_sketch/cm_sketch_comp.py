@@ -30,10 +30,10 @@ cms_space = sys.getsizeof(cm_sketch)
 print("CM Sketch vs Hash Table Memory Utilization")
 print("Hash Table:")
 print("Space: {} bytes".format(hash_table_space))
-print()
+print("*************")
 print("CM Sketch:")
 print("Space: {} bytes".format(cms_space))
-percentage_difference = ((hash_table_space - cms_space) / hash_table_space) * 100
+percentage_difference = ((hash_table_space - cms_space) / float(hash_table_space)) * 100
 print("Percentage Difference: {} %".format(percentage_difference))
 
 
