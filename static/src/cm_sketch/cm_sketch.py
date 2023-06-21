@@ -1,4 +1,4 @@
-from pyprobables import CountMinSketch
+from probables import CountMinSketch
 
 # Create a Count-Min Sketch with 4 hash functions and a width of 1000
 cms = CountMinSketch(4, 1000)
